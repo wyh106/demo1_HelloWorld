@@ -13,6 +13,7 @@ public class AppConfigurer extends WebMvcConfigurerAdapter {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         // 自定义内部资源目录
         registry.addResourceHandler("/myres/**").addResourceLocations("classpath:/myres/");
+        registry.addResourceHandler("/templates/**").addResourceLocations("classpath:/templates/");
 
         // 自定义外部资源目录
         registry.addResourceHandler("/api_files/**").addResourceLocations("file:G:/api_files/");
