@@ -18,4 +18,13 @@ public class TemplateController {
         map.put("hello","from TemplateController.helloHtml");
         return"/helloHtml";
     }
+
+    /**
+     * 返回FTL模板.
+     */
+    @RequestMapping("/helloFtl")
+    public String helloFtl(Map<String,Object> map){
+        map.put("hello","from TemplateController.helloFtl");
+        return"/helloFtl";
+    }
 }
